@@ -41,9 +41,9 @@ Vmax = 100;   % Volts
 %%%% Define regiao:
 %%%% este dx e' a discretizacao utilizada 
 %dx=0.05; % Tempo de execu��o longo!!
-%dx=0.1;
+dx=0.1;
 %dx=0.25;
-dx=0.5;   %% Mude para 0.25 quando for gerar os resultados finais
+% dx=0.5;   %% Mude para 0.25 quando for gerar os resultados finais
 erro=0.0;
 start=start_Dual= -1;
 iter=0;
