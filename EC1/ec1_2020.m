@@ -219,11 +219,11 @@ Rdual = (1 / ((2*R) * 1 * sigma * sigma_dual * 1));
 %%%
 %%%    VETOR DESLOCAMENTO
 %%%
-Dn = [Phi_new(2,1:Nx-1),Phi_new(1:Ny-1,Nx-1)',Phi_new(Ny-1,1:Nx-1),Phi_new(1:Ny-1,2)']*epsr*eps0/dx*100;
+Dn = [Phi_new(2,1:Nx-1),Phi_new(1:Ny-1,Nx-1)',Phi_new(Ny-1,1:Nx-1),Phi_new(1:Ny-1,2)']*epsr*eps0/dx*100;  %% C/m^2
 %%
 %%   Densidade de carga m�nima em nC/m^2
 %%
-Rho_s_min = -max(Dn);
+Rho_s_min = -max(Dn) * 1e9; % para converter para nC/m^2
 %%
 %%  Numero de tubos de corrente
 %%
@@ -253,7 +253,7 @@ hold on
 %%%
 %%%
 %%%
-deltaV = (Vmax - Vmin) / ntubos;
+deltaV = (Vmax - Vmin) / floor(ntubos);
 V=0:deltaV:Vmax;
 colormap jet;
 contour(x,y, Dual_new, V);
