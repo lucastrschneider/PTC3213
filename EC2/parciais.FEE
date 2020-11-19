@@ -1,0 +1,116 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[Depth]       =  10
+[LengthUnits] =  centimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 0
+[BlockProps]  = 10
+  <BeginBlock>
+    <BlockName> = "Transformer Oil"
+    <ex> = 4.5
+    <ey> = 4.5
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Mica"
+    <ex> = 6
+    <ey> = 6
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Delrin"
+    <ex> = 3.7000000000000002
+    <ey> = 3.7000000000000002
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Lexan"
+    <ex> = 2.96
+    <ey> = 2.96
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Marble"
+    <ex> = 8
+    <ey> = 8
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Mylar"
+    <ex> = 3.2000000000000002
+    <ey> = 3.2000000000000002
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Nylon"
+    <ex> = 3.7999999999999998
+    <ey> = 3.7999999999999998
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Polyamide"
+    <ex> = 2.5
+    <ey> = 2.5
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Polypropylene"
+    <ex> = 2.2000000000000002
+    <ey> = 2.2000000000000002
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "Porcelain"
+    <ex> = 5.9000000000000004
+    <ey> = 5.9000000000000004
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 3
+  <BeginConductor>
+    <ConductorName> = "Cilindro 1"
+    <Vc> = 1
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Terra"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "Cilindro 2"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 8
+0	0	0	0	0
+10	0	0	0	0
+3	2	0	0	0
+5	2	0	0	0
+4	-1	0	0	0
+4	-4	0	0	0
+5	5	0	0	0
+5	-5	0	0	0
+[NumSegments] = 1
+0	1	-1	0	0	0	0
+[NumArcSegments] = 8
+0	7	90	0.10000000000000001	0	0	0	2
+1	6	90	0.10000000000000001	0	0	0	2
+4	5	180	0.10000000000000001	0	0	0	3
+5	4	180	0.10000000000000001	0	0	0	3
+2	3	180	0.10000000000000001	0	0	0	1
+3	2	180	0.10000000000000001	0	0	0	1
+6	0	90	0.10000000000000001	0	0	0	2
+7	1	90	0.10000000000000001	0	0	0	2
+[NumHoles] = 2
+4.3799999999999999	-2.5700000000000003	0
+3.9299999999999997	2.1000000000000001	0
+[NumBlockLabels] = 2
+6.5599999999999996	1.8899999999999999	1	-1	0	0
+1.1200000000000001	-0.52000000000000002	10	-1	0	0
